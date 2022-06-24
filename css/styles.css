@@ -204,19 +204,18 @@ img {
   
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  background-color: transparent;
+  background-color: transparent;  
 
-  cursor: pointer;
+  cursor: pointer;  
 }
 
-.modal-close-btn:hover, 
-.modal-close-btn:focus {
-  color: var(--accent-color);
+.modal-close-icon {
+  transition: fill var(--duration) var(--timing-function);
 }
 
 .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  fill: currentColor;
+  fill: var(--accent-color);
 }
 
 .contact-form-call {
@@ -286,14 +285,11 @@ img {
   color: var(--placeholder-text-color);
 }
 
-.contact-form-input:hover + .contact-form-input-icon,
 .contact-form-input:focus + .contact-form-input-icon {
   fill: var(--accent-color);
 }
 
-.contact-form-input:hover,
-.contact-form-input:focus,
-.contact-form-message:hover,   
+.contact-form-input:focus,   
 .contact-form-message:focus {  
   outline: none;  
   border-color: var(--accent-color);  
@@ -635,8 +631,9 @@ img {
   background-color: var(--primary-white-color);
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  transition: color var(--duration) var(--timing-function),
-              border-color var(--duration) var(--timing-function);
+  transition: border-color var(--duration) var(--timing-function),
+                     color var(--duration) var(--timing-function);
+              
 }
 
 .client-list-icon {
@@ -769,9 +766,9 @@ img {
   background-color: var(--secondary-bg-color);
   border: none;
   border-radius: 4px;
-  transition: color var(--duration) var(--timing-function),
-              background-color var(--duration) var(--timing-function),
-              box-shadow var(--duration) var(--timing-function);  
+  transition: background-color var(--duration) var(--timing-function),
+                    box-shadow var(--duration) var(--timing-function),
+                         color var(--duration) var(--timing-function);  
 }
 
 .button.current,
