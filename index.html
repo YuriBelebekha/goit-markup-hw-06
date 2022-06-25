@@ -510,12 +510,21 @@
 						</li>
 					</ul>
 				</div>
+				<form class="footer-form">
+					<p class="footer-form-call">Подпишитесь на рассылку</p>
+					<div class="footer-form-wrapper">
+						<input class="footer-form-input" type="email" name="mailing" placeholder="E-mail" />
+						<button class="footer-form-btn">
+							<span class="footer-form-btn-text">Подписаться</span>
+						</button>
+					</div>
+				</form>
 			</div>
 		</footer>
 
 		<div class="backdrop is-hidden" data-modal>
 			<div class="modal">
-				<button class="modal-close-btn" type="button" data-modal-close>
+				<button class="modal-close-btn button" type="submit" data-modal-close>
 					<svg class="modal-close-icon" width="18" height="18">
 						<use href="./images/sprite.svg#close-icon"></use>
 					</svg>
@@ -571,21 +580,21 @@
 
 					<div class="contact-form-checkbox-wrapper">
 						<input
-							class="contact-form-checkbox-input"
+							class="contact-form-checkbox-input visually-hidden"
 							type="checkbox"
 							name="accept_policy"
 							value="accept_policy"
-							id="form-checkbox"
+							id="policy-checkbox"
 							required
 						/>
-						<label class="contact-form-checkbox-label" for="form-checkbox">
+						<label class="contact-form-checkbox-label" for="policy-checkbox">
 							<span class="contact-form-label-text">
 								Соглашаюсь с рассылкой и принимаю
-								<a href="">Условия договора</a>
+								<a class="text-agreement-link" href="" rel="noreferrer noopener">Условия договора</a>
 							</span>
 						</label>
 					</div>
-					<button class="contact-form-submit-btn" type="submit">Отправить</button>
+					<button class="contact-form-submit-btn button" type="submit">Отправить</button>
 				</form>
 			</div>
 		</div>
